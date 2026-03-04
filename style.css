@@ -43,7 +43,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--white);
+    color: var(--black);
     letter-spacing: 0.3px;
 }
 
@@ -140,7 +140,6 @@ p {
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55));
     margin-bottom: -80px; /*this will tighten the space between the  logo and text*/
 }
-
 .hero h1 {
     font-size: clamp(2.6rem, 4.6vw, 4rem);
     margin-bottom: 14px;
