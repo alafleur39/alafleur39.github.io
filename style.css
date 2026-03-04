@@ -138,7 +138,7 @@ p {
     width: clamp(300px, 60vw, 700px);
     margin: 0 auto 6px;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55));
-    margin-bottom: -100px; /*this will tighten the space between the  logo and text*/
+    margin-bottom: -80px; /*this will tighten the space between the  logo and text*/
 }
 
 .hero h1 {
