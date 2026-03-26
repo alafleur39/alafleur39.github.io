@@ -32,73 +32,120 @@
         </nav>
     </header>
     <section class="menu">
-    <h1>Our Menu</h1>
+        <h1>Our Menu</h1>
 
-    <div class="menu-container">
-        <div class="menu-card">
-            <img src="images/griot-recipe.jpg.webp" alt="Griot">
-            <h3>Griot</h3>
-            <p>Crispy fried pork served with pikliz</p>
-            <span>$10</span>
+       
+        <div class="menu-container">
+            <div class="menu-card" data-name="Griot" data-price="10">
+                <img src="images/griot-recipe.jpg.webp" alt="Griot">
+                <h3>Griot</h3>
+                <p>Crispy fried pork served with pikliz</p>
+                <span>$10</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Tassot Cabrit" data-price="13">
+                <img src="images/tassot-de-cabrit.jpg" alt="Tassot Cabrit">
+                <h3>Tassot Cabrit</h3>
+                <p>Seasoned fried goat with Haitian spices</p>
+                <span>$13</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Banan Peze" data-price="13">
+                <img src="images/bananpeze.jpg" alt="Banan Peze">
+                <h3>Banan Peze</h3>
+                <p>Seasoned fried plantains served with your meat of choice</p>
+                <span>$13</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Legume" data-price="11">
+                <img src="images/legume.jpeg.webp" alt="Legume">
+                <h3>Legume</h3>
+                <p>Traditional vegetable stew with beef</p>
+                <span>$11</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Diri ak Djon Djon" data-price="12">
+                <img src="images/diridjondjon.jpg" alt="Diri ak Djon Djon">
+                <h3>Diri ak Djon Djon</h3>
+                <p>Black mushroom rice specialty</p>
+                <span>$12</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Pâté Kòde" data-price="12">
+                <img src="images/PateKode.jpg.webp" alt="Pâté Kòde">
+                <h3>Pâté Kòde</h3>
+                <p>Traditional Haitian meat pâté served inside fried dough</p>
+                <span>$12</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Bouyon Bef" data-price="12">
+                <img src="images/bouyonbef.jpeg" alt="Bouyon Bef">
+                <h3>Bouyon Bef</h3>
+                <p>Traditional beef soup with vegetables</p>
+                <span>$12</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Diri Kole ak Pwa" data-price="12">
+                <img src="images/dirikole.jpg.jxl" alt="Diri Kole ak Pwa">
+                <h3>Diri Kole ak Pwa</h3>
+                <p>Traditional Haitian rice and beans served with meat of your choice</p>
+                <span>$12</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Beef Side" data-price="5">
+                <h3>Beef Side</h3>
+                <p>Half-pound side order of beef.</p>
+                <span>$5</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Goat Side" data-price="5">
+                <h3>Goat Side</h3>
+                <p>Half-pound side order of goat.</p>
+                <span>$5</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Pork Side" data-price="5">
+                <h3>Pork Side</h3>
+                <p>Half-pound side order of pork.</p>
+                <span>$5</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Chicken Side" data-price="5">
+                <h3>Chicken Side</h3>
+                <p>Half-pound side order of chicken.</p>
+                <span>$5</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+
+            <div class="menu-card" data-name="Fish Side" data-price="5">
+                <h3>Fish Side</h3>
+                <p>Half-pound side order of fish.</p>
+                <span>$5</span>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
         </div>
 
-        <div class="menu-card">
-            <img src="images/tassot-de-cabrit.jpg" alt="Tassot Cabrit">
-            <h3>Tassot Cabrit</h3>
-            <p>Seasoned fried goat with Haitian spices</p>
-            <span>$13</span>
-        </div>
-        <div class="menu-card">
-            <img src="images/bananpeze.jpg" alt="Banan Peze">
-            <h3>Banan Peze</h3>
-            <p>Seasoned fried plantains served with your meat of choice</p>
-            <span>$13</span>
+        <div class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button id="clear-cart" type="button">Clear Cart</button>
         </div>
 
-        <div class="menu-card">
-            <img src="images/legume.jpeg.webp" alt="Legume">
-            <h3>Legume</h3>
-            <p>Traditional vegetable stew with beef</p>
-            <span>$11</span>
-        </div>
-
-        <div class="menu-card">
-            <img src="images/diridjondjon.jpg" alt="Diri ak Djon Djon">
-            <h3>Diri ak Djon Djon</h3>
-            <p>Black mushroom rice specialty</p>
-            <span>$12</span>
-        </div>
-        <div class="menu-card">
-            <img src="images/PateKode.jpg.webp" alt="Pâté Kòde">
-            <h3>Pâté Kòde</h3>
-            <p>Traditional Haitian meat pâté served inside fried dough</p>
-            <span>$12</span>
-        </div>
-         <div class="menu-card">
-            <img src="images/bouyonbef.jpeg" alt="Bouyon Bef">
-            <h3>Bouyon Bef</h3>
-            <p>Traditional beef soup with vegetables</p>
-            <span>$12</span>
-        </div>
-        <div class="menu-card">
-            <img src="images/dirikole.jpg.jxl" alt="Diri Kole ak Pwa">
-            <h3>Diri Kole ak Pwa</h3>
-            <p>Traditional Haitian rice and beans served with meat of your choice</p>
-            <span>$12</span>
-        </div>
-         <div class="menu-card">
-            <h3>Meat options as a side</h3>
-            <li>Beef</li>
-            <li>Goat</li>
-            <li>Pork</li>
-            <li>Chicken</li>
-            <li>Fish</li>
-            <span>$5 per half pound</span>
-        </div>
-
-
-    </div>
-</section>
+    </section>
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-section">

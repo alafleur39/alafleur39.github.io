@@ -182,7 +182,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
-    margin: 40px auto 0;
+    margin: 32px auto 0;
     max-width: 1200px;
 }
 
@@ -224,6 +224,87 @@ p {
 .menu-card:hover {
     transform: translateY(-4px);
     transition: transform 0.2s ease;
+}
+.add-to-cart { /* Add to Cart button styling */
+    margin-top: 14px;
+    padding: 10px 16px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover { /* Add to Cart button hover effect */
+    background-color: #001978;
+    transform: translateY(-2px);
+}
+
+.cart-section { /* Shopping cart section styling */
+    max-width: 1200px;
+    margin: 32px auto 0;
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.cart-section h2 { /* Shopping cart title styling */
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item { /* Individual cart item styling */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-info { /* Cart item information styling */
+    flex: 1;
+}
+
+.cart-item-info p {
+    margin: 6px 0 0;
+}
+
+.cart-item button { /* Remove button styling */
+    background-color: var(--red);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cart-item button:hover { /* Remove button hover effect */
+    background-color: #b60f2d;
+}
+
+#clear-cart { /* Clear Cart button styling */
+    margin-top: 20px;
+    padding: 12px 18px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#clear-cart:hover { /* Clear Cart button hover effect */
+    background-color: #b60f2d;
 }
 
 /* GALLERY */
@@ -547,6 +628,15 @@ select:focus {
 
     .menu-container {
         grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cart-item button {
+        margin-top: 12px;
     }
 
     .slide {
